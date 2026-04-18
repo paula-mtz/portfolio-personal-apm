@@ -1,1 +1,69 @@
-*{background-color: aqua;}
+* {
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+   font-family: "Space Grotesk", sans-serif;
+background-color: rgb(254, 254, 254);
+scroll-behavior: smooth;
+}
+
+body{
+    padding: 30px;
+}
+
+img{
+    width: 100%;
+    display:block;
+}
+
+ul{
+    list-style: none;
+}
+
+a { color: black; text-decoration: none; }
+
+site-header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+logo{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#menu > ul {
+    display: flex;
+    justify-content:space-around;
+    gap: 40px;
+}
+
+#menu > ul > li {
+    list-style: none;
+}
+
+#menu > ul > li > a {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+#menu > ul > li > a:hover {
+    text-decoration: line-through;
+}
+
+home-gallery{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+home-gallery figure:nth-child(2) {
+    margin-top: 40px;
+}
+
+home-gallery figure:nth-child(5) {
+    margin-top: -20px;
+}
