@@ -36,7 +36,6 @@ logo{
 
 #menu > ul {
     display: flex;
-    justify-content:space-around;
     gap: 40px;
 }
 
@@ -48,22 +47,41 @@ logo{
     color: black;
     text-decoration: none;
     font-size: 1rem;
+    position:relative
 }
 
 #menu > ul > li > a:hover {
     text-decoration: line-through;
 }
 
-home-gallery{
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-bottom: 40px;
-}
-home-gallery figure:nth-child(2) {
-    margin-top: 40px;
+.masonry-gallery{
+    column-count: 3;
+    gap:2rem;
 }
 
-home-gallery figure:nth-child(5) {
-    margin-top: -20px;
+.masonry-gallery>figure{
+    margin-bottom: 2rem;
+    border-radius: 3px;
+    padding: 1rem;
+    background-color: white;
+}
+
+
+
+.work-gallery{
+    column-count: 4;
+    gap:2rem;
+}
+
+.work-gallery>figure{
+    margin-bottom: 2rem;
+    border-radius: 3px;
+    padding: 1rem;
+    background-color: white;
+}
+
+
+.home-text {
+margin-top: 78px;
+
 }
